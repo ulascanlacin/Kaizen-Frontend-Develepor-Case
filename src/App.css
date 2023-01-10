@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body {
+    height: 100%;
+    margin: 0;
+}
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    font-family: Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex !important;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-image {
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.back-button {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 2em;
+    left: 1em;
+    border-radius: 100%;
+    background-color: #1d1e1c21;
 }
 
-.App-link {
-  color: #61dafb;
+.back-button:active {
+    border: 1px solid #f40000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-button:hover {
+    border: 1px solid #f40000;
+}
+
+.brand-icon-container {
+    display: flex;
+}
+
+.Promo-Detail-img {
+    width: 100%;
+    border-radius: 0 0 0 100px;
+}
+
+.brand-icon {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.1em;
+    left: 1em;
+}
+
+.promotion-date {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    background-color: #1d1e1c;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.promotion-title {
+    margin: 0.55em;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Promotion-Description {
+    text-align: start;
+    font-size: 14px;
+}
+
+.promotion-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f40000;
+    border-radius: 28px;
+}
+
+.Product-Details-Button {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+}
+
+.btn-container {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.0001) 0%,
+        #ffffff 100%
+    );
+    display: flex;
+    align-items: center;
+    height: 130px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.Promotion-Description > table {
+    width: 300px !important;
+}
+
+.Promotion-Description > p {
+    padding: 0px !important;
+    margin: 0px;
 }
